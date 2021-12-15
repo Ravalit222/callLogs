@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <Button
+        android:id="@+id/allLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Logs"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </Button>
+    <Button
+        android:id="@+id/dialledCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialled Calls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allLogs">
+    </Button>
+    <Button
+        android:id="@+id/receivedCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Received Calls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialledCalls">
+    </Button>
+    <Button
+        android:id="@+id/missedCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Missed Calls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receivedCalls">
+    </Button>
+    <Button
+        android:id="@+id/rejectedCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rejected Calls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/missedCalls">
+    </Button>
+
+    <Button
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAR CHART"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rejectedCalls">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
